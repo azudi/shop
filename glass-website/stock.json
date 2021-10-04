@@ -1,0 +1,45 @@
+   
+   {
+   "stocks":"stock availability",
+   "content":[
+   
+   {
+   
+   "mainItem": "Canvas",
+   "mainTitle":"logos",
+   "mainImg":"pics/foot5.jpg",
+   "mainTopic":"Quisque id vulputate urna. Vivamus eget neque euismod, hendrerit velit at elementum.",
+   "price":"$38.20",
+   "preorder":"preorder",
+   "id":"bxt2",
+   "gallery":["pics/foot14.jpg","pics/foot14.jpg","pics/foot15.jpg","pics/foot9.jpeg","pics/foot5.jpg","pics/foot2.jpg"] 
+   },
+   
+  {"mainItem": "Heeled",
+  "mainTitle":"Classic",
+  "mainImg":"pics/foot12.jpg",
+  "mainTopic":"Quisque id vulputate urna. Vivamus eget neque euismod, hendrerit velit at elementum.",
+  "price":"$48.50",
+  "preorder":"preorder",
+  "id":"bxt1",
+  "gallery":["pics/foot13.jpg","pics/foot14.jpg","pics/foot15.jpg","pics/foot9.jpeg","pics/foot2.jpg","pics/foot5.jpg"]
+  
+  },
+    {"mainItem": "Sneaker",
+    "mainTitle":"Fashion",
+    "mainImg":"pics/foot14.jpg",
+    "mainTopic":"Quisque id vulputate urna. Vivamus eget neque euismod, hendrerit velit at elementum.",
+    "price":"$29.80",
+    "preorder":"preorder",
+    "id":"bxt3",
+    "gallery":["pics/foot13.jpg","pics/foot14.jpg","pics/foot15.jpg","pics/foot9.jpeg","pics/foot2.jpg","pics/foot5.jpg"]
+    
+    }
+    
+    
+    
+    
+    
+    ]
+    
+    }

@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>glass-website</title>
+</head>
+
+   <meta http-equiv="Content-Type" content="text/html; " />
+   <meta name="keywords" content="" />
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+   
+  
+   <link rel="stylesheet" type="text/css" href="Font-face/font-face.css">
+   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+   <style type="text/css">
+    *{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-buser-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, curr*/ }
+    
+    :root{
+       --gray:rgba(240,240,240,0.5);
+       --white:rgba(240,240,240,1)
+     }
+  .top-prod-contain>div{position:relative}
+   main{
+      background-image: radial-gradient(at top left,rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("pics/1267580.jpg");
+       padding: 0%;color: var(--gray);font-family: web-regular;background-size:cover;
+   }
+   section{
+      background: rgba(40,40,40,1);
+     border-radius: 5px;color:rgba(240,240,240,0.8);
+   }
+   .flex{
+   display: flex;justify-content:center;
+   flex-wrap:wrap;width: 100%;
+   }
+   .align-item{
+   align-items:center;
+   }
+   .right{
+   text-align:right;
+   }.left-flex{justify-content:left !important; }
+   .center{
+   text-align:center;
+   }.left{text-align:left;}
+   .logo>i{
+   display: inline-block; width: 17px;height:17px;
+   border-radius: 50%;margin:0px;
+   background-image: radial-gradient(at top left,rgba(212,108,52,0.7),rgba(106,50,199,0.7),rgba(47,50,200,0.7));
+   }
+   .logo>i:nth-child(2) {
+      background-image: radial-gradient(at top left,rgba(212,120,52,0.7) 70%,rgba(47,50,200,0.7));
+      margin-bottom:20px;
+   }
+   .note-icon{
+   order:2;display: block;
+   }.navicon{
+     font-size: 22px;opacity:0.5;
+   }  .navbar{padding-bottom:0;width:100%;}
+   .navitem-div{
+   order:3; text-align:right;
+   }  .navitem-contain{display: none}
+   .navitem{
+   display: inline-block; padding: 1.5em 1em;overflow:hidden;position :relative;
+  font-family: web-bold }.navitem::before{
+     position:absolute;bottom:0;height: 4px;width: 100%;background: var(--white);
+     left:-100%;content:"";transition:0.2s;border-radius: 5px
+   }.navitem:hover::before{left:0}
+   .navitem-div>div>form>input{
+     border:none;outline:none;background: none;
+   }
+   .note-icon>i{
+     display:inline-block;padding:0 0.5em;font-size: 21px;color: var(--white);position:relative;
+   }.note-icon{text-align:center;}
+   .tag{position:absolute;top:0;left:calc(100% - 20px);width:17px;height:17px;border-radius: 50%;
+   background-image: radial-gradient(at top left,orange 60%,red);font-size: 8px;color:black;
+   display: inline-flex;justify-content:center;align-items:center;font-family :helvetica;font-weight:900;
+   }.second-nav{
+   padding: 0.5em 0 1em 0; margin-top:0.5em;background: rgba(0,0,0,0.2);border-radius: 5px;
+   }.filter{border:none;background: none;color:var(--white);opacity:0.5;font-size: 15px;font-family: web-regular;outline:none;padding: 0.2em 0;
+   width: 90%;-webkit-appearance:none; position:relative;display:inline-block; }
+   .filter-div{position:relative}
+   .filter-div::before{
+      position:absolute;left:calc(100% - 25px); border-top:7px solid rgba(235,235,235,0.4);
+      content:"";border-left:7px solid rgba(120,183,255,0);
+      border-right:7px solid rgba(120,183,255,0);top:calc(50% - 2.5px);
+   }
+   .new-category{font-size: 13px;font-family: web-bold;border :none;border-radius: 5px;
+   padding:0.5em 1em;outline: none;background: orange;  box-shadow:inset 0px -4px 3px rgba(0,0,0,0.3),0px 5px 6px rgba(0,0,0,0.7)}
+   .category-div{order:2}
+   .commenter{order:3}
+   .plus{
+      display:inline-flex;width:30px;height:30px;border-radius: 50%;justify-content:center;
+   align-items:center;font-size: 15px; background-image: radial-gradient(at top left,rgba(212,108,52,0.7),rgba(106,50,199,0.7),rgba(47,50,200,0.7));
+   }.commenter{
+   padding :1em 
+   }  .comment-photo>img{width:40px;border-radius: 50%;height:40px;object-fit:cover;border:4px solid var(--white);position:relative}
+   .comment-photo{display:inline-block}
+   .comment-photo>img:nth-child(2){left:-25px}.comment-photo>img:nth-child(3){left:-50px}
+    .comment-photo>img:nth-child(4){left:-75px;}
+    .comment-photo{padding-left:1em}.others-24{font-size: 13px;position:relative;left:-70px}
+    .nav-header{padding:0.5em;background: rgba(0,0,0,0.2);display: block;border-radius: 5px}
+    .side-nav{padding: 1em 0.7em;position: fixed;top:0;z-index:100;left:-100%;transition:0.4s;
+    background-image: linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)),url("pics/1267580.jpg");background-size:cover;
+    overflow-y:scroll;height:100%;width:280px;background-size:cover;
+    box-shadow:inset 0 -5px 10px rgba(0,0,0,0.6),0 7px 15px rgba(0,0,0,0.6);
+    
+    }
+    .side-nav::-webkit-scrollbar{display: none}
+    .side-nav{-ms-overflow-style:none;scrollbar-width:none}
+    .remove-menu{display: inline-flex;width:30px;height:30px;justify-content:center;align-items:center;
+    top:23px;left:calc(100% - 40px);position:absolute;background: var(--gray);color:black;border-radius: 5px}
+    .nav-menu{padding:1em 0.5em;display: block;border-radius: 5px}
+    .side-icon{margin: 0.4em;opacity:0.5;}.downicon{color:teal;float:right;padding-top:0.1em;font-size: 19px}
+    .white-icon{margin: 0.4em 0.5em;opacity:1;font-size: 20px}
+    a:hover{color:inherit;text-decoration:none;}a:active{color:inherit;text-decoration:none;}
+   .nav-menu-head{padding: 0.5em 0.7em;display:block}.nav-menu{padding:1em 0.5em;display: block;border-radius: 5px}
+   .article{
+      background-size:cover;box-shadow: 0 7px 15px rgb(0,50,0);
+      margin:1em 0;border-radius: 10px;position:relative
+   }
+   
+   .article>div{
+   background-image: radial-gradient(at top left,rgba(106,50,120,0.8),rgba(47,50,200,1)), url("pics/1267582.jpg");
+   background-size:cover;padding-top: 1em;padding-bottom:1em;border-radius: 10px;
+   box-shadow:inset 0 -2px 3px rgba(0,0,0,0.6),0 7px 15px rgba(0,0,0,0.6);
+   
+   }
+   .article>div>p{font-family: web-regular;font-size: 13.5px}
+   .article>div>button{border:none; outline: none;font-family: web-bold;color:var(--gray);padding: 0.4em 0.8em;border-radius: 50px;
+   background-image: radial-gradient(at top left,rgba(170,108,52,1),rgba(106,50,199,1),rgba(47,50,200,1));margin-top: 1em;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.3),inset 0 2px 4px rgba(0,0,0,0.3);font-size: 15px;
+   
+   }
+   .img-product>img{
+   width:100%;border-radius: 100px;height:120px;margin:0px;border:2px solid rgba(106,50,200,0.7);padding: 5px;
+   /*border-image:linear-gradient(90deg,black 60%,rgba(106,50,200,0.7) 66%,orange) 3;*/
+   object-fit:cover;
+   background-image: radial-gradient(at top left,rgba(106,50,199,1),rgba(47,50,200,1));
+   box-shadow: 0 3px 10px rgba(0,0,0,0.3),inset 0 0px 40px rgba(0,0,0,1),0 3px 10px rgba(0,0,0,0.3), 0 0 0 3px rgb(106,50,199);
+   color:var(--gray);
+   
+   }
+   .img-product{position:relative;width:160px;background: rgb(50,50,50);padding: 1em 0.5em 0.5em 0.5em;border-radius: 10px;
+   margin: 0 0.5em;display:inline-block;white-space:wrap;z-index:2;
+   box-shadow: inset 0 0 7px rgba(0,0,0,0.6),0 3px 7px rgba(0,0,0,0.7);
+   }
+   .img-product::before{
+   content:"";height:7px;width:100%;position:absolute;background: inherit;z-index:-1;
+   left:80%;top:40%;
+   }
+   .img-product:nth-last-of-type(1)::before {
+   display: none;
+   }
+   .img-product>span {white-space:wrap;color:rgb(100,100,100);font-size: 10px;display: block;margin: 0.3em 0;font-family: web-bold;}
+   .img-product>b{display: block;font-size: 12px}
+   .clicker{display: inline-flex; width: 30px;height:30px;background: rgb(79,161,255);border-radius: 50%;
+   justify-content:center;align-items:center;font-size: 13px;
+   background-image: radial-gradient(at top left,rgba(170,108,52,1),rgba(106,50,199,1),rgba(47,50,200,1));
+   box-shadow: 0 5px 10px rgba(0,0,0,0.5),inset 0 2px 4px rgba(0,0,0,0.3);color:var(--gray);
+   
+   }
+   .img-product>span>.clicker:nth-of-type(2){
+   float:right
+   }
+   .img-product>.click-contain{display: block;margin-top:0.6em;background: rgb(30,30,30);padding: 0.5em 0.3em;border-radius: 50px}
+   .attach{display: none;
+      position:absolute;width:150px;top:calc(100% - 100px);left:calc(100% - 200px);z-index:10;
+   }
+   .ani-shoe{display: none;
+   position:absolute;width:350px;top:calc(50% - 155px);left:calc(100% - 400px);z-index:10;
+   }
+    .scroll-contain::-webkit-scrollbar{display: none}
+    .scroll-contain{-ms-overflow-style:none;scrollbar-width:none}
+    .scroll-main::-webkit-scrollbar{display: none}
+    .scroll-main{-ms-overflow-style:none;scrollbar-width:none}
+    
+   .scroll-container::after{content:"";right:top:0;position:absolute;z-index:20;
+   background: red;width:50px;height:100%;}
+   .scroll-contain{
+     display:block; padding-bottom:1em;white-space:nowrap;overflow:scroll;scrollbar-width:none;position:relative
+   }
+   .scroll-main::before{content:"";width:30px;height:100%;position:absolute;top:0;right:10px;z-index:5;display: block;
+   background: linear-gradient(90deg,transparent 30%,rgb(40,40,40) 90%)}
+   .makers{width:97%;color:var(--gray);padding:1em 0 0.7em 1.5em;margin-left:2%;border-left:3px solid rgb(102,50,199);}
+   .diamond{width:30px;height:30px;display: inline-flex; background: rgb(50,50,50);justify-content:center;
+   align-items:center;font-size: 14px;border-radius: 50%;margin:0 0.6em;color:var(--gray);box-shadow: 0 3px 6px rgba(0,0,0,0.4)}
+   .side-display{
+     background: rgb(50,50,50);border-radius: 3px;font-size: 15px;position:relative;
+     box-shadow: inset 0 0 5px rgba(0,0,0,0.4),0 2px 4px rgba(0,0,0,0.4);
+   }.side-display>i{display: inline-block ;width: 13px;height:13px;border-radius: 50%;font-size: 15px;
+   background: rgba(10,150,229,1);margin-right:0.4em;
+   }.side-display{padding: 0.6em 0.7em; margin:0.6em 0;}
+   .side-display>span{float: right;width:25px;height:25px;background-image: radial-gradient(at top left,orange 30%,orange);
+   display: inline-flex;justify-content:center;align-items:center;border-radius: 3px;color:black;font-weight:900;
+   box-shadow: inset 0 -3px 5px rgba(0,0,0,0.4);
+   }
+   ::placeholder { 
+   color : var(--gray);
+   opacity : 1 ; /* Firefox */
+   }
+   :-ms-input-placeholder {
+   color : var(--gray);
+   }
+   ::-ms-input-placeholder {
+   color : var(--gray);
+   }
+   #check{
+   display: block;
+   width:100%;
+   padding-bottom:4%;
+   font-family:optima;
+   
+   }
+   .checker{
+   position: relative;
+   width:40px;
+   outline:none;
+   height:20px;
+   -webkit-appearance:none;
+   box-shadow: 0 0 0 1px rgba(221,141,39,1);
+   position: relative;
+   transition: 0.5s;
+   border-radius:20px;
+   vertical-align:middle
+   }
+   .checker::before{
+   content:"";
+   width:16px;
+   height: 16px;
+   margin:2px 4px;
+   background: rgb(221,141,39);
+   position: absolute;
+   transition: 0.5s;
+   left:0;
+   box-shadow:inset 0 0px 3px rgba(0,0,0,0.6),0 1px 3px rgba(0,0,0,0.6);
+   border-radius:20px;
+   }
+   .checker:checked{
+   background: rgb(10,150,229);box-shadow: none;
+   }
+   .checker:checked::before{
+   left:16px;box-shadow: non;
+   background:white ;
+   }
+  .plus-add{width:40px;height:40px;font-size: 20px;margin:0.5em 0.2em}
+   .float-right{float:right}
+   .new-product{
+      position:absolute;background: inherit;width:100%;top:100%;left:0;z-index:5;border-radius: 5px;display: none;
+      
+   }.new-product>span{display: block;padding:0.5em 1em;width:96%;margin:2%;background: rgb(40,40,40);
+   font-size: 15px;border-radius: 5px}
+   .div-item>div{
+    transition:0.5s;
+   }.div-item>div:hover::before{
+   display: none;
+   }
+   .div-item-icons>span{
+     display: inline-flex;width:35px;height:35px;border-radius:50%;justify-content:center;align-items:center;
+      background-image: radial-gradient(at top left,rgba(120,183,255,1),rgba(47,50,200,1));font-size: 15px;margin:0 0.4em;
+      color:var(--gray);box-shadow:inset 0 0px 3px rgba(0,0,0,0.6),0 1px 3px rgba(0,0,0,0.6);transition:0.3s;
+   }.div-item-icons>span:hover{color: var(--white);box-shadow: none}
+   .div-item-img>img{
+      width:100%;height:150px;object-fit:cover;
+      border-radius: 15px;margin:0px;border:2px solid rgba(106,50,200,0.7);padding: 2px;
+      /*border-image:linear-gradient(90deg,black 60%,rgba(106,50,200,0.7) 66%,orange) 3;*/
+      object-fit:cover;
+      background-image: radial-gradient(at top left,rgba(120,183,255,1),rgba(47,50,200,1));
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3),inset 0 0px 4px rgba(0,0,0,1),0 3px 10px rgba(0,0,0,0.3), 0 0 0 3px rgb(106,50,199);
+      color:var(--gray);
+      
+   }.div-item-img{padding: 0.5em;}
+   .div-item>div{
+   background: rgb(50,50,50);margin:1em;padding: 1em;border-radius: 10px;
+   box-shadow: inset 0 0 15px rgba(0,0,0,0.9),0 7px 10px rgb(0,0,0);
+   }
+   .div-item>div:before{
+       content:"";position:absolute;width:4px;height:20%;top:10%;left:2em;border-radius: 10px;
+       background-image: radial-gradient(at top left,rgba(120,183,255,1),rgba(47,50,200,1));
+   }
+   .div-item-head{padding-left:1em }
+   .div-item-head>h6{margin:0}.div-item-head>h4{line-height:0.2;}
+   .div-item-head>h6>span{margin:0.5em 0 0 0.75em;color:var(--white);display: inline-block; transform:scaleX(1.35);}
+   .div-item-head>h4>span{margin:0.5em 0 0 0.7em;color:var(--white);display: inline-block; transform:scaleX(1.3);text-transform:uppercase;
+   font-weight:900;letter-spacing:1px;
+     -webkit-text-fill-color:transparent;-webkit-text-stroke:0.3px rgba(250,250,250,0.35);
+   } .div-item-text>p{font-size:12px;padding:1em 0 0.5em 1.1em}
+   .div-item-price>span{font-size: 13px;display: inline-block; margin-left:1em;
+   font-family: web-bold;color:var(--gray);margin-bottom:0.3em;}
+   .div-item-price>button{font-size: 13px;display: inline-block; margin-left:1em;border:none; padding: 0.5em 1em;border-radius: 50px;
+   font-family: web-bold;color:var(--white);
+   background-image: radial-gradient(at top left,rgba(120,183,255,1),rgba(47,50,200,1));
+   box-shadow:inset 0 0px 3px rgba(0,0,0,0.6),0 1px 3px rgba(0,0,0,0.6);float:right;
+   outline: none;
+   }.promote{
+      background: rgb(221,92,97);padding: 0.5em 1em;border-radius: 10px;
+      box-shadow:inset 0 0px 7px rgba(0,0,0,0.6),0 5px 8px rgba(0,0,0,0.6);
+      margin: 0.5em 0;overflow:hidden;
+   }.promote-item{
+       font-family: helvetica
+   }
+   .promote:nth-child(2){
+   background:rgb(133,124,226)
+   }
+   .promote-item>b{font-weight:300;}
+   .promote-item>h6{padding: 0.5em 0;font-family: web-bold}
+   .rep-icon{font-size: 3em}.rep-icon-alt{display: inline-block; transform:rotateY(180deg);}
+   footer{padding: 2em 1em;margin-top:1em;border-radius: 10px;
+   box-shadow: inset 0 5px 15px rgba(0,0,0,0.4),0 4px 10px rgba(0,0,0,0.4);}
+   .foot-click{
+   display: inline-flex;width:45px;height:45px;border-radius:50%;justify-content:center;align-items:center;
+   background-image: radial-gradient(at top left,rgba(120,183,255,1),rgba(47,50,200,1));font-size: 15px;margin:0 0.4em;
+   color:black;
+   box-shadow:inset 0 0px 3px rgba(0,0,0,0.6),0 1px 3px rgba(0,0,0,0.6);
+   }.foot-click-p{
+   font-size: 14px;
+   }.foot-click-b{color: rgb(120,183,255)}
+   footer>div{
+      padding: 1em 0;
+   }.subscribe>input{
+      outline: none;border:none;background:none;font-family: web-regular;
+      width:calc(100% - 90px);color: rgb(120,183,255);
+   }.subscribe>button{
+   border:none;background:rgb(120,183,255) ;font-family: web-bold;padding: 0.4em 0;
+   border-radius :3px;width:90px;float:right;outline: none;
+   }.subscribe{
+   border: 1px solid rgb(120,183,255);display: inline-block;width:97%;
+   padding: 3px 4px;border-radius: 3px;margin-top:0.5em;align-items:center;
+   }.foot-end{
+  border-radius: 5px;color:rgb(120,183,255);text-align:center; }
+  .div-item>div{overflow:hidden;}
+  .loader{
+      position: fixed;top:0;left: 0;
+      background:rgb(50,50,50);width:100%;height:100%;
+      z-index:10000000000;justify-content:center;align-items:center;
+      display:flex ;
+  }.loader>span{display: inline-block;position:relative;
+  width: 75px;height: 75px;border-radius: 50%;border:10px solid rgb(30,30,30);
+  border-top:10px solid rgb(120,183,255);
+  box-shadow: inset 0 5px 15px rgba(0,0,0,0.3), 0 0 15px rgba(30,30,30,0.6);
+  animation:1s linear infinite roll}
+  @keyframes roll{
+  from{transform:rotateZ(0);}
+  to{transform:rotateZ(360deg);}
+  }.but-prod>div>span{
+  text-align:center;text-transform:uppercase;font-size: 11px;
+  border-radius: 2px !important;
+  }
+   @media all and (min-width:756px){
+     .navicon{
+     display:none;
+     }.note-icon>i:nth-child(3){padding-right:0.1em}
+     .note-icon{
+     order:3;
+     }.navitem-contain{display: flex}
+     .navitem-div{
+     order:2;
+     }.navbar{padding-right:0;}
+     .navitem-div{
+     order:3;
+     }main{padding: 2%}
+     .category-div{order:3}
+     .commenter{order:2;padding: 0}
+    .article>div{margin: 1em}
+     .article>div>p{width:50%}
+     .ani-shoe,.attach{
+     display:block;
+     }
+     .navitem-div{
+      text-align:left;
+     } 
+   }
+   @media all and (min-width:992px){
+   .remove-menu{display: none}
+   .side-nav{
+   left:0;position:relative;background: rgba(0,0,0,0.2);
+   top:0;box-shadow: none;
+   }.article>div>p{width:40%}
+   .navitem-div{
+   text-align:left;
+   } 
+   }
+   </style>
+   
+<body>
+    <div class="loader">
+    <span>
+      
+    </div>
+    </div>
+  <main>
+     <section>
+         <div class="flex navbar align-item">
+              <div class="logo col-sm-2 col-4 left"><i></i><i></i><i></i></div>
+              <!--end of three ball icon-->
+              <div class="navitem-div col-2 col-sm-2 col-md-7">
+                 <div class="flex align-item navitem-contain">
+                 <span class="col-2 navitem">App</span>
+                 <span class="col-2 navitem">Login</span>
+                 <span class="col-2 navitem">Chart</span>
+                 <span class="col-2 navitem">Category</span>
+                 <form class="col-4 flex align-item">
+                 <i class="fa fa-search col-2"></i><input placeholder="search" class="col-9">
+                 </form></div>
+                 
+                 <span class="fa fa-navicon navicon"></span>
+                
+              </div><!--end of nav items-->
+              <div class="col-md-3 col-6 col-sm-8 note-icon right">
+              <i><em class="tag">9+</em><i class="fa fa-bell"></i></i>
+              <i><em class="tag">7+</em><i class="fa fa-shopping-cart"></i></i>
+              <i><i class="fa fa-bookmark-o"></i></i>
+              </div>
+         
+         </div><!--end of flex nav nar-->
+      
+          <!--beginning of second nav menu--><div class="flex second-nav align-item">
+              <div class="col-md-4 col-6 ">
+                <form class="left-flex filter-div">
+                  <span class="fa fa-filter col-2"></span>
+                  <select class="filter col-9">
+                  <option>ramdomly</option>
+                  <option>expensive</option>
+                  <option>low cost</option>
+                  </select>
+                </form>
+              </div><!--end of select imput div-->
+              
+                <div class="col-md-3 col-6 right category-div">
+                <button class="new-category">New Category</button>
+                </div><!--end of new category button-->
+          
+             <!--beginning of commenters--> <div class="commenter col-md-5">
+              <span class="fa fa-plus plus"></span>
+              <div class="comment-photo">
+                <img src="pics/foot8.jpg">
+                 <img src="pics/foot9.jpg">
+                  <img src="pics/foot7.jpg">
+                  <img src="pics/foot2.jpg">
+                  
+              </div><!--end of commenter photo-->
+              <span class="others-24">and 24 others</span>
+              
+              </div>
+          
+          </div>
+      
+      
+      
+          <section class="body-sec flex" >
+          
+             <div class="col-lg-3 side-nav">
+             <span class="remove-menu">x</span>
+                  <span class="nav-header"><i class="fa fa-th side-icon"></i> All section</span>
+                  <span class="nav-menu"><i class="fa fa-download side-icon"></i> <a href="#" >app download</a><i class="fa fa-info-circle downicon"></i></span>
+                 <span class="nav-menu-head"><i class="fa fa-steam white-icon"></i><a href="#" >Sport boot</a></span>
+                 <span class="nav-menu-head"><i class="fa fa-buysellads white-icon"></i><a href="#" >Classic canvas</a></span>
+                 <span class="nav-menu-head"><i class="fa fa-cubes white-icon"></i><a href="#" >Collection</a></span>
+                 <span class="nav-menu-head"><i class="fa fa-diamond white-icon"></i><a href="#" >Customize</a></span>
+                 <span class="nav-menu-head"><i class="fa fa-globe white-icon"></i><a href="#" >Foreign</a></span>
+                 <span class="nav-menu-head"><i class="fa fa-map-signs white-icon"></i><a href="#" >Local</a></span>
+                  
+                 <br><br> 
+                  <span class="nav-header"><i class="fa fa-th side-icon"></i> Menu</span>
+                  <span class="nav-menu-head"><i class="fa fa-user white-icon"></i><a href="#" >Login</a></span>
+                  <span class="nav-menu-head"><i class="fa fa-line-chart white-icon"></i><a href="#" >Chart</a></span>
+                  <span class="nav-menu-head"><i class="fa fa-phone white-icon"></i><a href="#" >Contact</a></span>
+                  <span class="nav-menu-head"><i class="fa fa-sign-in white-icon"></i><a href="#" >Sign-Up</a></span>
+                  
+             </div><!--end of side nav menu-->
+           <div class="col-lg-9 col-md-12 main-content-div" style="padding: 0">
+           
+              <div class="article flex">
+              
+              <img class="ani-shoe" src="pics/ani-shoe.png">
+              <div class="col-md-11">
+                 <h5><span class="fa fa-diamond diamond"></span>Jerry's Shoe</h5>
+                 <p>
+                 Jerry's shoe is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+                 </p>
+                 <button>Start Shopping</button>
+                 </div>
+              </div>
+              
+             <!--beginning of scroller--> <div class="flex">
+             <h5 class="makers">Makers Products</h5>
+             
+             <div class="col-md-8 scroll-main">
+               <div class="scroll-contain">
+                 <!--scroll content begins--><div class="img-product">
+                <img src="pics/foot9.jpg">
+                <span>Gucci + canvas</span>
+                <b>$45.60</b>
+                <span class="click-contain">
+                 <i class="fa fa-shopping-cart clicker"></i><i class="fa fa-money clicker"></i>
+                 </span> </div><!--scroller comtent ends-->
+                 <!--scroll content begins--><div class="img-product">
+                 <img src="pics/foot10.jpg">
+                 <span>Gucci + canvas</span>
+                 <b>$45.60</b>
+                 <span class="click-contain">
+                 <i class="fa fa-shopping-cart clicker"></i><i class="fa fa-money clicker"></i>
+                 </span> </div><!--scroller comtent ends-->
+                 <!--scroll content begins--><div class="img-product">
+                 <img src="pics/foot11.jpg">
+                 <span>Gucci + canvas</span>
+                 <b>$45.60</b>
+                 <span class="click-contain">
+                 <i class="fa fa-shopping-cart clicker"></i><i class="fa fa-money clicker"></i>
+                 </span> </div><!--scroller comtent ends-->
+                 <!--scroll content begins--><div class="img-product">
+                 <img src="pics/foot13.jpg">
+                 <span>Gucci + canvas</span>
+                 <b>$45.60</b>
+                 <span class="click-contain">
+                 <i class="fa fa-shopping-cart clicker"></i><i class="fa fa-money clicker"></i>
+                 </span> </div><!--scroller comtent ends-->
+                 <!--scroll content begins--><div class="img-product">
+                 <img src="pics/foot14.jpg">
+                 <span>Gucci + canvas</span>
+                 <b>$45.60</b>
+                 <span class="click-contain">
+                 <i class="fa fa-shopping-cart clicker"></i><i class="fa fa-money clicker"></i>
+                 </span> </div><!--scroller comtent ends-->
+                 <!--scroll content begins--><div class="img-product">
+                 <img src="pics/foot15.jpg">
+                 <span>Gucci + canvas</span>
+                 <b>$45.60</b>
+                 <span class="click-contain">
+                 <i class="fa fa-shopping-cart clicker"></i><i class="fa fa-money clicker"></i>
+                 </span> </div><!--scroller comtent ends-->
+                 <!--scroll content begins--><div class="img-product">
+                 <img src="pics/foot16.jpg">
+                 <span>Gucci + canvas</span>
+                 <b>$45.60</b>
+                 <span class="click-contain">
+                 <i class="fa fa-shopping-cart clicker"></i><i class="fa fa-money clicker"></i>
+                 </span> </div><!--scroller comtent ends-->
+                 </div>
+                 </div>
+                 <div class="col-md-4">
+                    
+                    <div class="side-display">
+                      <i></i> New Product <span class="add add1">+</span>
+                    <div class="new-product">
+                    <span><a href="#" >Sneaker</a></span>
+                    <span><a href="#" >High heel</a></span>
+                    </div>
+                    </div>
+                 <div class="side-display">
+                 <i></i> Customer Care<span class="add add1">+</span>
+                 <div class="new-product">
+                  <span><a href="mailto:jerry.azubuike@yahoo.com" >Email</a></span>
+                  <span><a href="tel:08089873611" >Phone</a></span>
+                 </div>
+                 </div>
+                 <div class="side-display" style="background: rgb(50,50,50);">
+                    <i class="check-me"></i>Notification <input type="checkbox" class="checker float-right">
+                 </div>
+                       <div class="center" style="background: rgb(50,50,50);border-radius: 5px">
+                         <a href="" ><span class="fa fa-sliders plus plus-add"></span></a>
+                         <a href="" ><span class="fa fa-tint plus plus-add"></span></a>
+                         <a href="" ><span class="fa fa-wrench plus plus-add"></span></a>
+                         <a href="" ><span class="fa fa-lightbulb-o plus plus-add"></span></a>
+                         <a href="" ><span class="fa fa-plus plus plus-add"></span></a>
+                       </div>
+                 </div>
+              </div><!--end of scroller-->
+              
+              <br><!--begins of available product--><div class="display: flex">
+              <h5 class="makers">Stock Availabilty</h5>
+                 <!--begin of avail prod item--><div class="div-item col-sm-6 col-md-4 ">
+                    <div>
+                    <div class="div-item-icons center">
+                    <span class="fa fa-sliders"></span>
+                    <span class="fa fa-shopping-cart"></span>
+                    <span class="fa fa-qrcode"></span>
+                    <span class="fa fa-photo"></span>
+                    </div>
+                    <div class="div-item-img">
+                     <img src="pics/foot12.jpg">
+                    </div>
+                    <div class="div-item-head">
+                       <h6><span>Heeled</span></h6>
+                       <h4><span>CLASSIC</span></h5>
+                    </div>
+                      <div class="div-item-text">
+                        <p>
+                          Quisque id vulputate urna. Vivamus eget neque euismod,
+                          hendrerit velit at elementum.
+                         </p>
+                      </div>
+                     <div class="div-item-price">
+                        <span>$45.60</span>
+                        <button>Preorder </button>
+                     </div>
+                    
+                    </div>
+                 </div><!--end of avail prod item-->
+                 
+                   <!--begin of avail prod item--><div class="div-item col-sm-6 col-md-4 ">
+                   <div>
+                   <div class="div-item-icons center">
+                   <span class="fa fa-sliders"></span>
+                   <span class="fa fa-shopping-cart"></span>
+                   <span class="fa fa-qrcode"></span>
+                   <span class="fa fa-photo"></span>
+                   </div>
+                   <div class="div-item-img">
+                   <img src="pics/shoe5.jpg">
+                   </div>
+                   <div class="div-item-head">
+                   <h6><span>Canvas</span></h6>
+                   <h4><span>LOGOS</span></h5>
+                   </div>
+                   <div class="div-item-text">
+                   <p>
+                   Quisque id vulputate urna. Vivamus eget neque euismod,
+                   hendrerit velit at elementum.
+                   </p>
+                   </div>
+                   <div class="div-item-price">
+                   <span>$17.00</span>
+                   <button>Preorder </button>
+                   </div>
+                   
+                   </div>
+                   </div><!--end of avail prod item-->
+                   <!--begin of avail prod item--><div class="div-item col-sm-6 col-md-4 ">
+                   <div>
+                   <div class="div-item-icons center">
+                   <span class="fa fa-sliders"></span>
+                   <span class="fa fa-shopping-cart"></span>
+                   <span class="fa fa-qrcode"></span>
+                   <span class="fa fa-photo"></span>
+                   </div>
+                   <div class="div-item-img">
+                   <img src="pics/shoe2.jpg">
+                   </div>
+                   <div class="div-item-head">
+                   <h6><span>Heeled</span></h6>
+                   <h4><span>FASHION</span></h5>
+                   </div>
+                   <div class="div-item-text">
+                   <p>
+                   Quisque id vulputate urna. Vivamus eget neque euismod,
+                   hendrerit velit at elementum.
+                   </p>
+                   </div>
+                   <div class="div-item-price">
+                   <span>$36.80</span>
+                   <button>Preorder </button>
+                   </div>
+                   
+                   </div>
+                   </div><!--end of avail prod item-->
+                   <!--begin of avail prod item--><div class="div-item col-sm-6 col-md-4 ">
+                   <div>
+                   <div class="div-item-icons center">
+                   <span class="fa fa-sliders"></span>
+                   <span class="fa fa-shopping-cart"></span>
+                   <span class="fa fa-qrcode"></span>
+                   <span class="fa fa-photo"></span>
+                   </div>
+                   <div class="div-item-img">
+                   <img src="pics/shoe10.jpg">
+                   </div>
+                   <div class="div-item-head">
+                   <h6><span>Canvas</span></h6>
+                   <h4><span>CLASSIC</span></h5>
+                   </div>
+                   <div class="div-item-text">
+                   <p>
+                   Quisque id vulputate urna. Vivamus eget neque euismod,
+                   hendrerit velit at elementum.
+                   </p>
+                   </div>
+                   <div class="div-item-price">
+                   <span>$23.20</span>
+                   <button>Preorder </button>
+                   </div>
+                   
+                   </div>
+                   </div><!--end of avail prod item-->
+                   <!--begin of avail prod item--><div class="div-item col-sm-6 col-md-4 ">
+                   <div>
+                   <div class="div-item-icons center">
+                   <span class="fa fa-sliders"></span>
+                   <span class="fa fa-shopping-cart"></span>
+                   <span class="fa fa-qrcode"></span>
+                   <span class="fa fa-photo"></span>
+                   </div>
+                   <div class="div-item-img">
+                   <img src="pics/shoe1.jpeg">
+                   </div>
+                   <div class="div-item-head">
+                   <h6><span>Sneaker</span></h6>
+                   <h4><span>FASHION</span></h5>
+                   </div>
+                   <div class="div-item-text">
+                   <p>
+                   Quisque id vulputate urna. Vivamus eget neque euismod,
+                   hendrerit velit at elementum.
+                   </p>
+                   </div>
+                   <div class="div-item-price">
+                   <span>$21.80</span>
+                   <button>Preorder </button>
+                   </div>
+                   
+                   </div>
+                   </div><!--end of avail prod item-->
+                   <!--begin of avail prod item--><div class="div-item col-sm-6 col-md-4 ">
+                   <div>
+                   <div class="div-item-icons center">
+                   <span class="fa fa-sliders"></span>
+                   <span class="fa fa-shopping-cart"></span>
+                   <span class="fa fa-qrcode"></span>
+                   <span class="fa fa-photo"></span>
+                   </div>
+                   <div class="div-item-img">
+                   <img src="pics/shoe11.jpg">
+                   </div>
+                   <div class="div-item-head">
+                   <h6><span>BOOT</span></h6>
+                   <h4><span>LOGOS</span></h5>
+                   </div>
+                   <div class="div-item-text">
+                   <p>
+                   Quisque id vulputate urna. Vivamus eget neque euismod,
+                   hendrerit velit at elementum.
+                   </p>
+                   </div>
+                   <div class="div-item-price">
+                   <span>$18.30</span>
+                   <button>Preorder </button>
+                   </div>
+                   
+                   </div>
+                   </div><!--end of avail prod item-->
+                   
+                   
+                   <!--beginning of scroller--> <div class="flex">
+                   <h5 class="makers" style="margin-top:2em">Top Sales Product</h5>
+                   
+                   <div class="col-md-8 scroll-main">
+                   <div class="scroll-contain top-prod-contain but-prod">
+                   <!--scroll content begins--><div class="img-product">
+                   <img src="pics/foot.jpg">
+                   
+                   <span class="click-contain">
+                   Snekers
+                   </span> </div><!--scroller comtent ends-->
+                   <!--scroll content begins--><div class="img-product">
+                   <img src="pics/foot2.jpg">
+                  
+                   <span class="click-contain">
+                  Canvas
+                   </span> </div><!--scroller comtent ends-->
+                   <!--scroll content begins--><div class="img-product">
+                   <img src="pics/foot3.jpg">
+                  
+                   <span class="click-contain">
+                  Boot
+                   </span> </div><!--scroller comtent ends-->
+                   <!--scroll content begins--><div class="img-product">
+                   <img src="pics/foot4.jpg">
+                 
+                   <span class="click-contain">
+                  Heeled
+                   </span> </div><!--scroller comtent ends-->
+                   <!--scroll content begins--><div class="img-product">
+                   <img src="pics/foot5.jpg">
+                  
+                   <span class="click-contain">
+                  Sneakers
+                   </span> </div><!--scroller comtent ends-->
+                   <!--scroll content begins--><div class="img-product">
+                   <img src="pics/foot6.jpg">
+                   
+                   <span class="click-contain">
+                    Boots
+                   </span> </div><!--scroller comtent ends-->
+                   <!--scroll content begins--><div class="img-product">
+                   <img src="pics/foot7.jpg">
+                  
+                   <span class="click-contain">
+                    Canvas
+                   </span> </div><!--scroller comtent ends-->
+                   </div>
+                   </div>
+                   <div class="col-md-4 ">
+                     
+                     <div class="">
+                          <!--begin of rural delivery--> <div class="flex promote">
+                          <div class="col-8 promote-item">
+                            <b>Rurals</b>
+                            <h6>Delivery</h6>
+                          </div>
+                          <div class="col-4 right">
+                             <span class="fa fa-pied-piper-alt rep-icon"></span>
+                          </div>
+                          </div><!--end of rural delibery-->
+                          <!--begin of rural delivery--> <div class="flex promote">
+                          <div class="col-8 promote-item">
+                          <b>Remote</b>
+                          <h6>Delivery</h6>
+                          </div>
+                          <div class="col-4 right">
+                          <span class="fa fa-truck rep-icon rep-icon-alt"></span>
+                          </div>
+                          </div><!--end of rural delibery-->
+                         <div>
+                        </div>
+                   </div>
+                   </div><!--end of scroller-->
+                   
+                     <div class="flex avail-contain">
+                     <h5 class="makers" style="margin-top:1em">Stock Availabilty</h5>
+                     </div>
+                   
+              
+              </div><!--end of available product-->
+           </div><!--end of main nav menu-->
+          
+          </section>
+      <footer class="flex">
+        <div class="col-md-4 col-sm-6 col-lg-3">
+          <span class="fa fa-diamond foot-click"></span><b class="foot-click-b">JERRY's</b>
+          <p class="foot-click-p">
+           <span>
+           Quisque id vulputate urna. Vivamus eget neque euismod,
+           hendrerit velit at elementum.
+           </p>
+           </span>
+           <a href="#" >+234 8089873611</a>
+           <a href="#" >jerry.azubuike@yahoo.com</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-3 foot-motto">
+            <h5 class="makers" style="padding:0.5em">Mission</h5>
+            <p>
+               costomer service delivrance is our opmost
+               prierority. smartnes and uniquess is our style
+            </div>
+       
+          <div class="col-md-4 col-sm-9 col-lg-3">
+             Subscribe for our newsteller for information on latest
+             trending product and services
+             <form class="subscribe flex">
+              <input type="email" required placeholder="Email"><button>Submit</button>
+             </form>
+          </div>
+          
+          <div class="col-12 foot-end">
+          &copy;copyright with jerry's and right reserved 2021
+          </div>
+      </footer>
+      
+      
+     </section>
+</main>
+</body>
+</html>
+
+  <script type="text/javascript">
+  let icon=["fa fa-sliders","fa fa-shopping-cart","fa fa-qrcode","fa fa-image"];
+  let nextLoad;
+  
+ 
+  //begin of ajax call
+  let call=new XMLHttpRequest();
+  call.open("GET","stock.json",true);
+  call.onload=function (){
+ 
+    let product=JSON.parse(call.responseText);
+   for(let j=0;j<product.content.length;j++){
+    let mainContentDiv=document.querySelector(".main-content-div");
+    let availContain=document.querySelector(".avail-contain");
+    let mainDiv=document.createElement("div");
+    mainDiv.id=j;
+    mainDiv.classList.add("div-item","col-sm-6","col-md-4");
+    
+     
+    let mainDivSub=document.createElement("div");
+   
+    let iconDiv=document.createElement("div");
+    iconDiv.classList.add("div-item-icons","center");
+    let divItemImg=document.createElement("div");
+     divItemImg.onclick=function (e){
+      // window.open("glass-website.html");
+     // alert(e.target.getBoundingClientRect().top+","+e.target.getBoundingClientRect().bottom);
+     
+      localStorage.setItem("index", mainDiv.id);
+      alert(localStorage.getItem("index"))
+     }
+    divItemImg.classList.add("div-item-img");
+    let itemImg=document.createElement("img");
+    itemImg.src=product.content[j].mainImg;
+      let divItemHead=document.createElement("div");
+       divItemHead.classList.add("div-item-head");
+        let headH6=document.createElement("h6");
+          let headSpan=document.createElement("span");
+          headSpan.innerHTML=product.content[j].mainItem;
+          headH6.appendChild(headSpan);
+          let headH4=document.createElement("h4");
+          let headSpan2=document.createElement("span");
+          headSpan2.innerHTML=product.content[j].mainTitle;
+          headH4.appendChild(headSpan2);
+          divItemHead.appendChild(headH6);
+          divItemHead.appendChild(headH4);
+      for(var i=0;i<4;i++){
+          let spanIcon=document.createElement("span");
+          spanIcon.className=icon[i];
+          spanIcon.onclick=function (){
+          window.open("#");
+          }
+          iconDiv.appendChild(spanIcon);
+      }
+      let divItemText=document.createElement("div");
+      divItemText.classList.add("div-item-text");
+      let divItemTextP=document.createElement("p");
+      divItemTextP.innerHTML=product.content[j].mainTopic;
+      divItemText.appendChild(divItemTextP);
+      
+      let divItemPrice=document.createElement("div");
+      divItemPrice.classList.add("div-item-price");
+      let divItemPriceSpan=document.createElement("span");
+      divItemPriceSpan.innerHTML=product.content[j].price;
+      let divItemPriceButton=document.createElement("button");
+      divItemPriceButton.innerHTML=product.content[j].preorder;
+      divItemPrice.appendChild(divItemPriceSpan);
+      divItemPrice.appendChild(divItemPriceButton);
+    
+    
+    divItemImg.appendChild(itemImg);
+    mainDivSub.appendChild(iconDiv);
+     mainDivSub.appendChild(divItemImg);
+     mainDivSub.appendChild(divItemHead);
+     mainDivSub.appendChild(divItemText);
+     mainDivSub.appendChild(divItemPrice);
+    mainDiv.appendChild(mainDivSub);
+    availContain.appendChild(mainDiv)
+   
+  }
+  
+  }
+  call.onerror=function (){
+  //alert("unable to load items")
+  }
+  call.send();
+  
+  
+  
+  //end of ajax call
+    click=true;
+    clicks=true;
+    
+     window.onload=function (){
+     
+     document.querySelector(".loader").style.display="none";
+    
+    }
+   // localStorage.setItem("lastname", "Smith");
+    // Retrieve
+   // alert(localStorage.getItem("lastname"));
+    function moverLeft(trigger,element){
+       trigger.onclick=function (){
+        
+           element.style.left="0%";
+         
+       }
+      
+    }
+  function moverRight(trigger,element){
+  trigger.onclick=function (){
+  
+  element.style.left="-100%"
+ 
+  }
+  }
+  
+  function dropDown(trigger,element){
+       trigger.onclick=function (){
+       if(clicks){
+          element.style.display="none";
+          clicks=!clicks;
+       }
+       else{
+           element.style.display="block";
+           clicks=!clicks;
+       }
+       }
+  }
+  
+     moverLeft(document.querySelector(".navicon"),document.querySelector(".side-nav"));
+    moverRight(document.querySelector(".remove-menu"),document.querySelector(".side-nav"));
+     dropDown(document.querySelectorAll(".add1")[0],document.querySelectorAll(".new-product")[0]);
+     dropDown(document.querySelectorAll(".add1")[1],document.querySelectorAll(".new-product")[1]);
+     dropDown(document.querySelectorAll(".add1")[2],document.querySelectorAll(".new-product")[2]);
+     dropDown(document.querySelectorAll(".add1")[3],document.querySelectorAll(".new-product")[3]);
+     
+   
+  </script>
